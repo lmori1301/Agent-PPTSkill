@@ -36,7 +36,7 @@
 ## 使用方法
 极其简单，把这段提示词发给你的Agent即可：
 
-安装这个Skill：https://github.com/lmori1301/Agent-PPTSkill
+安装这个Skill：https://github.com/lmori1301/Agent-PPTSkill<br>
 然后使用这个Skill做一个复杂、豪华的PPT，读取本地XXX文件，来介绍XXX项目
 
 ## 谁要看这个
