@@ -22,47 +22,47 @@
 以下是用本 Skill 生成的实际页面（信息密度高、排版复杂、商务质感）：
 
 <p align="center">
-  <img src="./assets/showcase-1.jpg" alt="效果展示 1 - 关务管理全景" width="720" />
+  <img src="./assets/slide-01.png" alt="效果展示 1 - 关务管理全景" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-2.jpg" alt="效果展示 2 - 关务实施路线" width="720" />
+  <img src="./assets/slide-02.png" alt="效果展示 2 - 关务实施路线" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-3.jpg" alt="效果展示 3 - 关务行业现状" width="720" />
+  <img src="./assets/slide-03.png" alt="效果展示 3 - 关务行业现状" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-4.jpg" alt="效果展示 4 - 关务系统建设基础" width="720" />
+  <img src="./assets/slide-04.png" alt="效果展示 4 - 关务系统建设基础" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-5.jpg" alt="效果展示 5 - 关务系统技术架构" width="720" />
+  <img src="./assets/slide-05.png" alt="效果展示 5 - 关务系统技术架构" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-6.jpg" alt="效果展示 6 - 智慧关务全流程" width="720" />
+  <img src="./assets/slide-06.png" alt="效果展示 6 - 智慧关务全流程" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-7.jpg" alt="效果展示 7 - 关务数字化核心价值" width="720" />
+  <img src="./assets/slide-07.png" alt="效果展示 7 - 关务数字化核心价值" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-8.jpg" alt="效果展示 8 - 关务合规韧性策略" width="720" />
+  <img src="./assets/slide-08.png" alt="效果展示 8 - 关务合规韧性策略" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-9.jpg" alt="效果展示 9 - 关务管理平台核心能力" width="720" />
+  <img src="./assets/slide-09.png" alt="效果展示 9 - 关务管理平台核心能力" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-10.jpg" alt="效果展示 10 - 关务数字化新基建" width="720" />
+  <img src="./assets/slide-10.png" alt="效果展示 10 - 关务数字化新基建" width="720" />
 </p>
 
 <p align="center">
-  <img src="./assets/showcase-11.jpg" alt="效果展示 11 - 关务系统建设成果" width="720" />
+  <img src="./assets/slide-11.png" alt="效果展示 11 - 关务系统建设成果" width="720" />
 </p>
 
 ## 使用方法
