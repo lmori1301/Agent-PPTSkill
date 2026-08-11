@@ -1,8 +1,8 @@
 {
   "$schema": "ppt-skill-manifest/v1",
   "skill_name": "ppt-builder",
-  "version": "1.0.20",
-  "file_count": 109,
+  "version": "1.0.21",
+  "file_count": 119,
   "files": {
     ".gitattributes": {
       "sha256": "538c7a3e4a5ddc32a56c2f79f7e3abae99a9cb98e587bf681d9a7a1d19a554dc",
@@ -11,15 +11,21 @@
       "last_modified": "1.0.6"
     },
     ".gitignore": {
-      "sha256": "30f85f63855e540d13dc85d70352d92bed17c6383a918a66ca227f8701d7c5d0",
-      "size": 300,
+      "sha256": "96201daa46fa378d0a5501fb75dfc1dca5dd8189d351eb9087fa4633b257182e",
+      "size": 379,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.20"
     },
     "CHANGELOG.md": {
       "sha256": "7e2e2acccd888d3c4443b6a0883a405c5d7654757686528c17fa43c5bbee24a4",
       "size": 22429,
       "version_added": "1.0.0",
+      "last_modified": "1.0.20"
+    },
+    "INSTALL.md": {
+      "sha256": "b019a7a199df264a9307f538a8605d396437e1d6d1315d41f0ee794a3de103e5",
+      "size": 3543,
+      "version_added": "1.0.20",
       "last_modified": "1.0.20"
     },
     "LICENSE": {
@@ -35,40 +41,88 @@
       "last_modified": "1.0.0"
     },
     "README.md": {
-      "sha256": "d1b4c095c0c1c0216131b096e6c4b644aa0437028ab3e1abf5d003e12d9a85cc",
-      "size": 3758,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.18"
-    },
-    "SKILL.md": {
-      "sha256": "f3ecf7a39b0eceef3af62663952227646143834943409862d72efde306205072",
-      "size": 14179,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.18"
-    },
-    "VERSION": {
-      "sha256": "975801abe1af6fc1709ed2cd5b0680a4ea1daca7a5862e78b4ff941bb1420191",
-      "size": 7,
+      "sha256": "e084433b57f3799b9007cab1ca94254ec249aa602986a1b9a1c4b577eac56d8f",
+      "size": 4752,
       "version_added": "1.0.0",
       "last_modified": "1.0.20"
     },
-    "assets/showcase-1.jpg": {
-      "sha256": "b7fbc23cb084f4777d59c321630cc73744d1edf67fbbd6686c45fda0ed3a2dce",
-      "size": 121616,
-      "version_added": "1.0.15",
-      "last_modified": "1.0.15"
+    "SKILL.md": {
+      "sha256": "ad999277fab68b2bdd98a374b980b60cad8111d53117f51e25072f312c72e221",
+      "size": 14667,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.20"
     },
-    "assets/showcase-2.jpg": {
-      "sha256": "702aae2a849b668a32bfec08e1bca23b9869a4382daaccb78d427d733e7cb05d",
-      "size": 109960,
-      "version_added": "1.0.15",
-      "last_modified": "1.0.15"
+    "VERSION": {
+      "sha256": "7c17d29cc88ac4854b5aa04dd8f6dcb5431e05ccd517a1552769db99485d3d0c",
+      "size": 7,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.21"
     },
-    "assets/showcase-3.jpg": {
-      "sha256": "d037349ad467029be7d9d1e2aa98384e65924904c32c5115f2f73262eccbdc6a",
-      "size": 97997,
-      "version_added": "1.0.15",
-      "last_modified": "1.0.15"
+    "assets/slide-01.png": {
+      "sha256": "be410de3fe05749c46cc6f7fe0f7575734e2448b3a12d701f158fbf53bf7e654",
+      "size": 169788,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-02.png": {
+      "sha256": "6fadde33ca06a591480740fbc2d41f549975121784364258c921f11a69ef32ec",
+      "size": 147243,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-03.png": {
+      "sha256": "2d49751ef2fd597d780907ad4027b8a09f02dbd390ee622f7a4ff62f46bd1ca0",
+      "size": 265690,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-04.png": {
+      "sha256": "b0f3ac72fac3cff61e6b2b452b6df8dfa4ebc7555bcb3122863ccdeb0373dfab",
+      "size": 207127,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-05.png": {
+      "sha256": "7f27043bedd2ad963e8829ecde870c991ada19a30f6151fe034f5e7c37005654",
+      "size": 206012,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-06.png": {
+      "sha256": "e30492fdc8ef999aaf51a4fdb82b28a47d320443a4088a260ca0eff59290f2f6",
+      "size": 227794,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-07.png": {
+      "sha256": "b87159a8b3d94958bf493790b4596ec1dbd563b20a9137236765f6a0d8024161",
+      "size": 245956,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-08.png": {
+      "sha256": "470b971e78de17c26aafd99c56501d29ee39eaaf98b4baffee0a17428a249480",
+      "size": 240796,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-09.png": {
+      "sha256": "8e7f0bfcda1ee51bfc3d05d0b3d5bdd40989246bab484766b2f4a04fa91d6c86",
+      "size": 276358,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-10.png": {
+      "sha256": "75ae139de1200e146030882c2bb9a01b4b4a21e0aad6bb121f10f4fb59ce27b4",
+      "size": 362265,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
+    },
+    "assets/slide-11.png": {
+      "sha256": "1fc1ad1bdde4e1f1043dd0b56cd904a16b72ec2a2692902d84edfa84378af71a",
+      "size": 197920,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
     },
     "references/chart-editing.md": {
       "sha256": "37ccd257ae8f8c655e02703e90cdd9163f1254e21587cbe1c833ed8a2854f999",
@@ -81,6 +135,12 @@
       "size": 3346,
       "version_added": "1.0.0",
       "last_modified": "1.0.0"
+    },
+    "references/luxury-wrap-guide.md": {
+      "sha256": "c69ae881d50456a8bb8eaea48bf1310eae7457e77761b53f5569a2f885da24fe",
+      "size": 4061,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
     },
     "references/original-design-guide.md": {
       "sha256": "fbe502f5c4a5d4838c6ddeb321eb59bf0a31615be6cf9f7a73fff1bf11c216bb",
@@ -117,6 +177,12 @@
       "size": 13415,
       "version_added": "1.0.0",
       "last_modified": "1.0.17"
+    },
+    "scripts/build_wrap_pages.py": {
+      "sha256": "87a4eb886f35a497afce4fcfbb564c852377c91754ca3c571ceaae82deb18fac",
+      "size": 11211,
+      "version_added": "1.0.20",
+      "last_modified": "1.0.20"
     },
     "scripts/check_update.py": {
       "sha256": "6c2439d80ab47451b76f074fef7819b885bdecef46441061dd762202bf4f4d42",
@@ -647,10 +713,10 @@
       "last_modified": "1.0.6"
     },
     "updates.json": {
-      "sha256": "8baa2d306d6252e39aa3c4b7d2206ae9a40070262d1ca1843ad28359698a325b",
-      "size": 18984,
+      "sha256": "de41d5cb03802e1413b563756ed0bb2d39e485621e4664c81c244989aa4f4ba1",
+      "size": 19297,
       "version_added": "1.0.0",
-      "last_modified": "1.0.20"
+      "last_modified": "1.0.21"
     }
   }
 }

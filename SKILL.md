@@ -123,6 +123,7 @@ python3 scripts/check_update.py     # 列出 added / modified / removed
    - 如果 `ending` 数组为空，**直接以最后一张内容页收尾**，不要硬造"感谢聆听"。
    - 同理，`agenda` 空 → 不强加目录；`section_divider` 空 → 不强加分章扉页。
    - 也就是说：**模板有什么角色就用什么角色**，少一个角色就少一页，不要破坏视觉一致性去拼凑。这条规则在 v1.0.3 起对所有模板生效。
+   - **例外（v1.0.21 起）**：当用户**明确要求**「增加封面 / 目录 / 结束页」或要求"豪华版式、多装饰"时，即使模板没有这些角色，也按 [`references/luxury-wrap-guide.md`](./references/luxury-wrap-guide.md) 的规范，用 `scripts/build_wrap_pages.py` 为成品 PPT 追加 3 张豪华页（封面 / 目录 / 结束）。该脚本用 deepcopy 方案重建，不会破坏模板文件与视觉一致性，且 `--accent` 可匹配模板主题色。
 9. **同级标题字号必须一致，不要逐处改字号** ——
    - detail.json 顶部有 `type_scale`（字号层级表，level 1 = 最大），每个 slot 标了 `level`。**同一 level 的文字保持模板原字号，不要改字号。**
    - 某处文字偏长时，用**更精炼的措辞重写**来控制长度（见第 3 条），**不要把这一处字号改小**（会破坏同级一致），**也不要截断加省略号**。

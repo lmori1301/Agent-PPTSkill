@@ -1,9 +1,14 @@
 {
   "$schema": "ppt-skill-updates/v1",
-  "latest_version": "1.0.20",
+  "latest_version": "1.0.21",
   "update_source": "git+https://github.com/lmori1301/Agent-PPTSkill.git#main",
   "_update_source_help": "Set update_source to a URL prefix (e.g. https://example.com/ppt-skill/v1/) that hosts the same updates.json + the per-file mirror, OR to a git remote+branch in the form 'git+https://...repo.git#main'. When unset, check_update.py reports 'Update source unset' and exits cleanly.",
   "history": [
+    {
+      "version": "1.0.21",
+      "released_at": "2026-08-11",
+      "summary": "新增豪华版封面/目录/结束页能力：scripts/build_wrap_pages.py + references/luxury-wrap-guide.md；SKILL.md 第 8 条补充例外规则（用户明确要求豪华版式时可用脚本追加 3 张包装页）"
+    },
     {
       "version": "1.0.20",
       "released_at": "2026-06-22",

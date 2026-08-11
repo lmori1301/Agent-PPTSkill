@@ -1,3 +1,9 @@
+## [1.0.21] - 2026-08-11
+
+- 新增 `scripts/build_wrap_pages.py`：一键为任意成品 PPT 追加豪华版封面/目录/结束页（deepcopy 方案，支持 --accent 主题色切换）。
+- 新增 `references/luxury-wrap-guide.md`：豪华版式设计规范（渐变背景/几何装饰/图标系统/强对比标题）。
+- SKILL.md 第 8 条补充例外规则：用户明确要求封面/目录/结束页或豪华版式时，可用脚本追加，不再受"模板有什么角色就用什么角色"限制。
+
 # Changelog
 
 按版本倒序列出可读变更。机器读取请用 [`updates.json`](./updates.json)；只读哪些文件变动请用 [`manifest.json`](./manifest.json) 的 `last_modified` 字段。
