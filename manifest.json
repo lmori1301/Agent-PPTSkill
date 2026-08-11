@@ -137,10 +137,10 @@
       "last_modified": "1.0.0"
     },
     "references/luxury-wrap-guide.md": {
-      "sha256": "c69ae881d50456a8bb8eaea48bf1310eae7457e77761b53f5569a2f885da24fe",
-      "size": 4061,
+      "sha256": "2e1f6e183e03a409ed5771a9dc1e41556dfb396953598960df955e21d8d0fc92",
+      "size": 4515,
       "version_added": "1.0.20",
-      "last_modified": "1.0.20"
+      "last_modified": "1.0.21"
     },
     "references/original-design-guide.md": {
       "sha256": "fbe502f5c4a5d4838c6ddeb321eb59bf0a31615be6cf9f7a73fff1bf11c216bb",

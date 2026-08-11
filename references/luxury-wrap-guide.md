@@ -68,6 +68,15 @@
 
 ## 脚本用法
 
+**最小一行调用（目录自动提取、标题取文件名）：**
+
+```bash
+python3 scripts/build_wrap_pages.py 输入.pptx
+# → 生成 输入_wrapped.pptx（封面 + 目录 + 原内容 + 结束页）
+```
+
+**完整自定义调用：**
+
 ```bash
 python3 scripts/build_wrap_pages.py out.pptx \
   --title "核电研发与工程软件产品线" \
@@ -80,3 +89,7 @@ python3 scripts/build_wrap_pages.py out.pptx \
   --accent deepblue \
   --out 输出.pptx
 ```
+
+- `--toc` 缺省时自动从每张内容页提取标题（取字号最大的文本 run）。
+- `--title` 缺省取文件名；`--out` 缺省为 `<文件名>_wrapped.pptx`。
+- `--accent` 见上方主题色表。
