@@ -206,27 +206,81 @@ def build_wrap(input_pptx, out_pptx, title, subtitle, tagline,
     print(f"已生成豪华版包装页：{out_pptx}（{n} 内容页 + 封面/目录/结束 = {n + 3} 页）")
 
 
+def _slide_title(slide, max_len=16):
+    """从一张内容页提取最可能的标题：取字号最大的文本 run，其次取首个非空文本框。"""
+    best, best_size = "", 0
+    for shape in slide.shapes:
+        if not shape.has_text_frame:
+            continue
+        for para in shape.text_frame.paragraphs:
+            for run in para.runs:
+                t = run.text.strip()
+                if not t:
+                    continue
+                size = run.font.size.pt if run.font.size else 0
+                if size > best_size:
+                    best, best_size = t, size
+    if not best:
+        for shape in slide.shapes:
+            if shape.has_text_frame and shape.text_frame.text.strip():
+                best = shape.text_frame.text.strip().split("\n")[0]
+                break
+    return best[:max_len] if best else "未命名章节"
+
+
+def extract_toc(prs):
+    """自动从内容页提取目录：{序号: 标题}。跳过标题重复或过短的页。"""
+    toc, toc_sub = {}, {}
+    idx = 0
+    for slide in prs.slides:
+        t = _slide_title(slide)
+        if len(t) < 2 or (toc and t in toc.values()):
+            continue
+        idx += 1
+        toc[f"{idx:02d}"] = t
+    return toc, toc_sub
+
+
+def default_title(input_pptx):
+    """从文件名推断主标题。"""
+    import os
+    stem = os.path.splitext(os.path.basename(input_pptx))[0]
+    return stem.replace("_", " ").replace("-", " ")
+
+
 def main():
-    ap = argparse.ArgumentParser(description="为已有 PPT 添加豪华版封面/目录/结束页")
+    ap = argparse.ArgumentParser(description="一键为已有 PPT 添加豪华版封面/目录/结束页（目录自动从内容页提取）")
     ap.add_argument("input", help="输入 PPTX 路径")
-    ap.add_argument("--title", required=True, help="主标题")
+    ap.add_argument("--title", default=None, help="主标题（缺省用文件名）")
     ap.add_argument("--subtitle", default="", help="副标题")
     ap.add_argument("--tagline", default="", help="英文衬底标签")
     ap.add_argument("--dept", default="项目组", help="部门")
     ap.add_argument("--version", default="V1.0", help="版本")
     ap.add_argument("--date", default="2026 年", help="日期")
-    ap.add_argument("--toc", default="{}", help="JSON 目录 {01:标题, 02:标题}")
+    ap.add_argument("--toc", default=None, help="JSON 目录 {01:标题, 02:标题}（缺省自动提取）")
     ap.add_argument("--toc-sub", default="{}", help="JSON 目录副标 {01:副标}")
     ap.add_argument("--highlights", default="", help="封面亮点列表，分号分隔（最多 4 项）")
     ap.add_argument("--accent", default="deepblue", choices=list(ACCENTS.keys()), help="主题色")
-    ap.add_argument("--out", required=True, help="输出 PPTX 路径")
+    ap.add_argument("--out", default=None, help="输出 PPTX 路径（缺省 <文件名>_wrapped.pptx）")
     args = ap.parse_args()
 
-    toc = json.loads(args.toc)
-    toc_sub = json.loads(args.toc_sub)
+    src = Presentation(args.input)
+    n = len(src.slides)
+
+    if args.title is None:
+        args.title = default_title(args.input)
+    if args.toc is None:
+        args.toc, args.toc_sub = extract_toc(src)
+    else:
+        args.toc = json.loads(args.toc)
+        args.toc_sub = json.loads(args.toc_sub)
+    if args.out is None:
+        stem = args.input.rsplit(".", 1)[0]
+        args.out = f"{stem}_wrapped.pptx"
+
     highlights = [h.strip() for h in args.highlights.split(";") if h.strip()] if args.highlights else []
     build_wrap(args.input, args.out, args.title, args.subtitle, args.tagline,
-               args.dept, args.version, args.date, toc, toc_sub, args.accent, highlights)
+               args.dept, args.version, args.date, args.toc, args.toc_sub, args.accent, highlights)
 
 
 if __name__ == "__main__":

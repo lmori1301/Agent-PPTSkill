@@ -1,5 +1,14 @@
 ## [1.0.21] - 2026-08-11
 
+- 新增 `scripts/build_wrap_pages.py`：**一行命令**为任意成品 PPT 追加豪华版封面/目录/结束页（deepcopy 方案，`--accent` 支持 4 套主题色）。
+  - 目录**自动从内容页提取**章节标题（按字号最大的文本 run），无需手填；
+  - 标题缺省取文件名，`--out` 缺省为 `<文件名>_wrapped.pptx`；
+  - 最小调用：`python3 scripts/build_wrap_pages.py 输入.pptx`。
+- 新增 `references/luxury-wrap-guide.md`：豪华版式设计规范（渐变背景/几何装饰/图标系统/强对比标题）。
+- SKILL.md 第 8 条补充例外规则：用户明确要求封面/目录/结束页或豪华版式时，可用脚本追加，不再受"模板有什么角色就用什么角色"限制。
+
+## [1.0.21] - 2026-08-11
+
 - 新增 `scripts/build_wrap_pages.py`：一键为任意成品 PPT 追加豪华版封面/目录/结束页（deepcopy 方案，支持 --accent 主题色切换）。
 - 新增 `references/luxury-wrap-guide.md`：豪华版式设计规范（渐变背景/几何装饰/图标系统/强对比标题）。
 - SKILL.md 第 8 条补充例外规则：用户明确要求封面/目录/结束页或豪华版式时，可用脚本追加，不再受"模板有什么角色就用什么角色"限制。

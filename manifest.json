@@ -17,10 +17,10 @@
       "last_modified": "1.0.20"
     },
     "CHANGELOG.md": {
-      "sha256": "7e2e2acccd888d3c4443b6a0883a405c5d7654757686528c17fa43c5bbee24a4",
-      "size": 22429,
+      "sha256": "436e1c8044165ac03b7222b5859008be085ffde2888945d96414eee083ede70d",
+      "size": 23710,
       "version_added": "1.0.0",
-      "last_modified": "1.0.20"
+      "last_modified": "1.0.21"
     },
     "INSTALL.md": {
       "sha256": "b019a7a199df264a9307f538a8605d396437e1d6d1315d41f0ee794a3de103e5",
@@ -179,10 +179,10 @@
       "last_modified": "1.0.17"
     },
     "scripts/build_wrap_pages.py": {
-      "sha256": "87a4eb886f35a497afce4fcfbb564c852377c91754ca3c571ceaae82deb18fac",
-      "size": 11211,
+      "sha256": "5046fad5878ab26d5992d101af882b1f5a3e36774ccac8ba3d6a79e64dc24b88",
+      "size": 13132,
       "version_added": "1.0.20",
-      "last_modified": "1.0.20"
+      "last_modified": "1.0.21"
     },
     "scripts/check_update.py": {
       "sha256": "6c2439d80ab47451b76f074fef7819b885bdecef46441061dd762202bf4f4d42",
