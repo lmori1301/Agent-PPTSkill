@@ -4,7 +4,7 @@
 >
 > ⚠️ **非商业使用**：本仓库及内置模板**仅供个人学习与研究**，禁止任何商业用途。
 > 
-> **支持定制私有化模板**：如果你想要Agent能按你公司的PPT模板来生成PPT，可以加我微信**duge360**定制。
+> **支持定制私有化模板**：如果你想要Agent能按你公司的PPT模板来生成PPT，可以加我微信**Yu_Z0809**定制。
 
 ## 交流群
 
@@ -97,7 +97,6 @@ templates/       # 17 个模板（每个 4 文件）
 
 ## 致谢与版权
 
-- 本仓库没有PPT模板的版权
-- **禁止任何二次分发 / 商业使用**
+- 本仓库及内置模板仅供个人学习与研究，禁止任何商业用途
 - 用到的开源工具：[LibreOffice](https://www.libreoffice.org/)、[python-pptx](https://python-pptx.readthedocs.io/)、[Poppler](https://poppler.freedesktop.org/)、[WenQuanYi Micro Hei](http://wenq.org/)
 - 感谢 [LinuxDO](https://linux.do) 社区的支持
